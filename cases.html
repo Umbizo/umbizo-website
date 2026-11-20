@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en-GB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case studies | Umbizo</title>
+<meta name="description" content="Case studies from Umbizo across genomics, clinical research, healthcare and commercial work, each starting from a question that needed a defensible answer.">
+<link rel="canonical" href="https://umbizo.co.uk/cases.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Umbizo">
+<meta property="og:title" content="Case studies | Umbizo">
+<meta property="og:description" content="Case studies from Umbizo across genomics, clinical research, healthcare and commercial work, each starting from a question that needed a defensible answer.">
+<meta property="og:url" content="https://umbizo.co.uk/cases.html">
+<meta property="og:image" content="https://umbizo.co.uk/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08090C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ink:#08090C; --ink-1:#0C0E13; --ink-2:#12141B;
+    --line:rgba(255,255,255,0.09); --line-2:rgba(255,255,255,0.16);
+    --fg:#EDEEF2; --fg-2:#9CA1B2; --fg-3:#7C8296;
+    --blue:#012FFF; --blue-lit:#5E7CFF; --blue-glow:rgba(1,47,255,0.55);
+    --magenta:#FB2666; --magenta-lit:#FF6E97; --magenta-glow:rgba(251,38,102,0.5);
+    --serif:'DM Serif Display',Georgia,serif; --sans:'DM Sans',system-ui,-apple-system,sans-serif; --mono:'DM Mono',ui-monospace,monospace;
+    --e:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{background:var(--ink);color:var(--fg);font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(22px,4vw,52px)}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-0.012em}
+  .grad{color:var(--blue-lit)}
+  .rot{width:24px;height:24px;position:relative;flex:0 0 auto;animation:spin 8s linear infinite}
+  .rot::before{content:"";position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--line-2)}
+  .rot i{position:absolute;inset:0}
+  .rot i::before,.rot i::after{content:"";position:absolute;left:50%;width:5px;height:5px;border-radius:50%;transform:translateX(-50%)}
+  .rot i::before{top:-1.5px;background:var(--blue-lit);box-shadow:0 0 8px var(--blue-glow)}
+  .rot i::after{bottom:-1.5px;background:var(--magenta-lit);box-shadow:0 0 8px var(--magenta-glow)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media(prefers-reduced-motion:reduce){.rot{animation:none}}
+  .bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:var(--ink)}
+  .bg .grid{position:absolute;inset:-2px;background-image:linear-gradient(rgba(94,124,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(94,124,255,.055) 1px,transparent 1px);background-size:66px 66px;-webkit-mask-image:radial-gradient(130% 100% at 50% 6%,#000 24%,transparent 76%);mask-image:radial-gradient(130% 100% at 50% 6%,#000 24%,transparent 76%);opacity:.6}
+  .bg .glow{position:absolute;border-radius:50%}
+  .bg .g1{width:1040px;height:1040px;background:radial-gradient(circle closest-side,rgba(1,47,255,.185),rgba(1,47,255,.105) 38%,rgba(1,47,255,.035) 64%,transparent 100%);top:calc(-16% - 200px);left:calc(-10% - 200px)}
+  .bg .g2{width:960px;height:960px;background:radial-gradient(circle closest-side,rgba(251,38,102,.115),rgba(251,38,102,.065) 38%,rgba(251,38,102,.022) 64%,transparent 100%);bottom:calc(-14% - 200px);right:calc(-8% - 200px)}
+  nav{position:fixed;top:0;left:0;right:0;z-index:8000;height:80px;display:flex;align-items:center;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+  nav.solid{background:rgba(8,9,12,0.62);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:24px;width:auto;display:block}
+  .nav-links{display:flex;gap:30px;font-size:14px;color:var(--fg-2)}
+  .nav-links a{position:relative;transition:color .25s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:linear-gradient(90deg,var(--blue-lit),var(--magenta-lit));transition:width .3s var(--e)}
+  .nav-links a:hover{color:var(--fg)}.nav-links a:hover::after{width:100%}
+  .nav-links a.on{color:var(--fg)}.nav-links a.on::after{width:100%}
+  .nav-cta{font-size:13.5px;border:1px solid var(--line-2);border-radius:999px;padding:10px 20px;transition:border-color .3s,color .3s,box-shadow .3s;white-space:nowrap}
+  .nav-cta:hover{border-color:var(--blue-lit);color:var(--blue-lit);box-shadow:0 0 26px -6px var(--blue-glow)}
+  @media(max-width:920px){.nav-links{display:none}}
+  main{position:relative;z-index:1}
+  .phero{padding:clamp(128px,17vh,186px) 0 clamp(30px,5vw,52px)}
+  .over{font-family:var(--mono);font-size:11.5px;letter-spacing:0.26em;text-transform:uppercase;color:var(--fg-3);display:inline-flex;align-items:center;gap:10px}
+  .over .m{color:var(--blue-lit)}
+  .phero h1{font-size:clamp(40px,6.2vw,80px);max-width:17ch;margin-top:20px}
+  .phero h1 .i{font-style:normal}
+  .phero .lead{margin-top:22px;max-width:60ch;color:var(--fg-2);font-size:clamp(16px,1.5vw,18px)}
+  .reveal{opacity:0;transform:translateY(26px);filter:blur(6px);transition:opacity .9s var(--e),transform .9s var(--e),filter .9s var(--e);transition-delay:calc(var(--d,0) * 65ms)}
+  .reveal.in{opacity:1;transform:none;filter:none}
+  html:not(.js) .reveal{opacity:1;transform:none;filter:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;filter:none;transition:none}}
+  footer{border-top:1px solid var(--line);padding:70px 0 40px;position:relative;z-index:1;margin-top:40px}
+  .foot-top{display:grid;grid-template-columns:1.3fr 1.7fr;gap:clamp(36px,5vw,72px);align-items:start}
+  .foot-brand .brand{margin-bottom:18px}
+  .foot-brand .bd{color:var(--fg-2);font-size:15px;line-height:1.6;max-width:34ch}
+  .foot-mail{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:var(--mono);font-size:13.5px;color:var(--fg);border:1px solid var(--line-2);border-radius:999px;padding:11px 20px;transition:border-color .3s,color .3s,box-shadow .3s}
+  .foot-mail:hover{border-color:var(--blue-lit);color:var(--blue-lit);box-shadow:0 0 26px -6px var(--blue-glow)}
+  .foot-connect{display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-start;gap:24px}
+  .foot-social{display:flex;gap:12px}
+  .foot-social .soc{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.11);color:var(--fg-3);transition:color .35s var(--e),border-color .35s var(--e),transform .35s var(--e)}
+  .foot-social .soc:hover{color:var(--fg);border-color:var(--blue-lit);transform:translateY(-2px)}
+  .foot-social .soc svg{width:20px;height:20px}
+  .foot-links{display:flex;gap:28px;font-family:var(--mono);font-size:13.5px;letter-spacing:0.02em}
+  .foot-links a{color:var(--fg-2);transition:color .25s}
+  .foot-links a:hover{color:var(--blue-lit)}
+  .foot-certs{display:flex;gap:20px;align-items:center;margin-top:4px}
+  .foot-certs .cert{width:auto;display:block;opacity:.72;transition:opacity .3s var(--e)}
+  .foot-certs .cert:hover{opacity:1}
+  .foot-certs .cert.ce{height:48px}
+  .foot-certs .cert.dspt{height:30px}
+  .fbot{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px 26px;font-family:var(--mono);font-size:12px;color:var(--fg-3)}
+  .fbot .ico{display:inline-flex;align-items:center;gap:8px}
+  .fbot .ico::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue-lit);box-shadow:0 0 8px var(--blue-glow)}
+  .fbot a{color:var(--fg-3);transition:color .25s}.fbot a:hover{color:var(--blue-lit)}
+  @media(max-width:820px){.foot-top{grid-template-columns:1fr;gap:40px}}
+  @media(max-width:820px){.foot-connect{align-items:flex-start}}
+
+  .filters{scroll-margin-top:100px;display:flex;flex-wrap:wrap;gap:10px;margin-bottom:clamp(28px,4vw,42px)}
+  .fbtn{font-family:var(--mono);font-size:12px;letter-spacing:0.04em;color:var(--fg-2);border:1px solid var(--line);background:rgba(94,124,255,.04);border-radius:999px;padding:9px 16px;cursor:pointer;transition:border-color .3s,color .3s,background .3s}
+  .fbtn:hover{border-color:var(--line-2);color:var(--fg)}
+  .fbtn.on{color:#fff;border-color:transparent;background:linear-gradient(100deg,var(--blue),#2748ff)}
+  .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-bottom:clamp(60px,8vw,110px)}
+  @media(max-width:1000px){.cases{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.cases{grid-template-columns:1fr}}
+  .cs{scroll-margin-top:100px;position:relative;border:1px solid var(--line);border-radius:16px;padding:26px 24px;background:linear-gradient(180deg,rgba(18,20,27,.6),rgba(12,14,19,.35));display:flex;flex-direction:column;overflow:hidden;transition:border-color .35s,transform .5s var(--e),box-shadow .35s}
+  .cs::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(var(--blue-lit),var(--magenta-lit));transform:scaleY(0);transform-origin:top;transition:transform .4s var(--e)}
+  .cs:hover{border-color:var(--line-2);transform:translateY(-5px);box-shadow:0 28px 66px -34px var(--blue-glow)}
+  .cs:hover::before{transform:scaleY(1)}
+  .cs .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--blue-lit)}
+  .cs .sec{font-family:var(--mono);font-size:10.5px;color:var(--fg-3);float:right}
+  .cs h3{font-family:var(--serif);font-size:clamp(20px,1.7vw,24px);line-height:1.12;margin-top:16px}
+  .cs .prob{margin-top:12px;color:var(--fg-2);font-size:14px;line-height:1.55}
+  .cs .more{margin-top:14px}
+  .js .cs .more{display:none}
+  .cs.open .more{display:block}
+  .cs .more h4{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--fg-3);margin:14px 0 6px}
+  .cs .more p{color:var(--fg-2);font-size:14px;line-height:1.55}
+  .cs .row{display:flex;align-items:center;gap:16px;margin-top:auto;padding-top:18px}
+  .cs .toggle{font-family:var(--mono);font-size:12px;color:var(--blue-lit);background:none;border:0;cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:7px}
+  .cs .toggle .c{transition:transform .3s var(--e)}
+  .cs.open .toggle .c{transform:rotate(90deg)}
+  .cs .ext{font-family:var(--mono);font-size:12px;color:var(--fg-3);transition:color .25s;margin-left:auto}
+  .cs .ext:hover{color:var(--blue-lit)}
+  .noresult{display:none;color:var(--fg-2);font-family:var(--mono);font-size:14px;padding:20px 0}
+
+
+  .cs{padding:0;overflow:hidden;cursor:pointer}
+  .cs .cs-img{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--ink-2)}
+  .cs .cs-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(12%) contrast(1.02);transition:transform .6s var(--e),filter .5s}
+  .cs:hover .cs-img img{transform:scale(1.05);filter:grayscale(0) contrast(1.05)}
+  .cs .cs-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(8,9,12,.55))}
+  .cs .cs-img.ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,rgba(1,47,255,.85),rgba(251,38,102,.75))}
+  .cs .cs-img.ph span{font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,.92)}
+  .cs .cs-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+
+
+  .cs .extbtn{font-family:var(--mono);font-size:12px;color:var(--fg-3);background:none;border:0;cursor:pointer;padding:0;transition:color .25s;margin-left:auto}
+  .cs .extbtn:hover{color:var(--blue-lit)}
+  .cmodal{position:fixed;inset:0;z-index:9500;display:none;align-items:flex-start;justify-content:center;padding:clamp(20px,5vh,60px) 16px;overflow-y:auto;background:rgba(6,7,10,.95);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  .cmodal.open{display:flex}
+  body.modal-open{overflow:hidden}
+  .cmodal-card{position:relative;max-width:760px;width:100%;margin:auto;background:#0C0E13;border:1px solid var(--line-2);border-radius:20px;box-shadow:0 40px 120px -30px rgba(0,0,0,.8);padding:clamp(28px,4vw,52px)}
+  .cmodal-close{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line-2);background:rgba(255,255,255,.03);color:var(--fg-2);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .25s,color .25s}
+  .cmodal-close:hover{border-color:var(--blue-lit);color:var(--blue-lit)}
+  .cmodal-card .mover{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-lit)}
+  .cmodal-card h2{font-family:var(--serif);font-size:clamp(26px,3.2vw,40px);line-height:1.08;margin:12px 0 4px;max-width:20ch}
+  .cmodal-card h3{font-family:var(--mono);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--blue-lit);margin:26px 0 8px}
+  .cmodal-card p{color:var(--fg-2);font-size:16px;line-height:1.7;margin-bottom:12px}
+  .cmodal-card ul{list-style:none;margin:6px 0 14px;padding:0}
+  .cmodal-card li{color:var(--fg-2);font-size:15.5px;line-height:1.6;padding-left:20px;position:relative;margin-bottom:8px}
+  .cmodal-card li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--blue-lit);box-shadow:0 0 8px var(--blue-glow)}
+  .cmodal-card .mquote{border-left:2px solid var(--blue-lit);background:rgba(94,124,255,.05);border-radius:10px;padding:18px 20px;margin:22px 0}
+  .cmodal-card .mquote p{font-family:var(--serif);font-size:19px;line-height:1.4;color:var(--fg);margin:0}
+  .cmodal-card .mcta{margin-top:28px;display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:14px 28px;font-size:14.5px;font-weight:500;color:#fff;background:linear-gradient(100deg,var(--blue),#2748ff)}
+
+html{scroll-padding-top:96px}
+
+  /* mobile menu */
+  .nav-burger{display:none;width:44px;height:44px;margin-left:10px;border:1px solid var(--line-2);border-radius:50%;background:transparent;color:var(--fg);cursor:pointer;align-items:center;justify-content:center;flex:0 0 auto;padding:0}
+  .nav-burger span{display:block;width:16px;height:1.5px;background:currentColor;position:relative;transition:background .2s}
+  .nav-burger span::before,.nav-burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:currentColor;transition:transform .3s cubic-bezier(.16,1,.3,1),top .3s cubic-bezier(.16,1,.3,1)}
+  .nav-burger span::before{top:-5px}.nav-burger span::after{top:5px}
+  nav.open .nav-burger span{background:transparent}
+  nav.open .nav-burger span::before{top:0;transform:rotate(45deg)}
+  nav.open .nav-burger span::after{top:0;transform:rotate(-45deg)}
+  @media(max-width:920px){
+    .nav-burger{display:inline-flex}
+    nav .nav-cta{margin-left:auto}
+    nav .nav-links{display:none;position:fixed;top:80px;left:0;right:0;flex-direction:column;gap:0;padding:6px clamp(22px,4vw,52px) 26px;background:#08090C;border-bottom:1px solid var(--line);font-size:19px;max-height:calc(100vh - 80px);overflow:auto}
+    nav.open .nav-links{display:flex}
+    nav .nav-links a{padding:17px 0;border-bottom:1px solid var(--line);color:var(--fg)}
+    nav .nav-links a:last-child{border-bottom:0}
+    nav .nav-links a::after{display:none}
+    nav.open{background:#08090C;border-bottom-color:var(--line)}
+  }
+</style>
+
+<div class="bg"><div class="grid"></div><div class="glow g1"></div><div class="glow g2"></div></div>
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="rot"><i></i></span><img src="img/umbizo-logo.png" alt="Umbizo"></a>
+    <div class="nav-links" id="navLinks">
+      <a href="cases.html" class="on">Case studies</a><a href="team.html">Team</a><a href="publications.html">Publications</a><a href="faq.html">FAQ</a><a href="index.html#about">About</a>
+    </div>
+    <a class="nav-cta" href="contact.html">Enquire</a>
+    <button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <h1 class="reveal" style="--d:1">Problems we were trusted to <span class="i grad">solve.</span></h1>
+      <p class="lead reveal" style="--d:2">A selection of engagements across genomics, clinical research, healthcare and beyond. Each began with a question that mattered and needed an answer the client could act on and defend.</p>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="filters reveal"><button class="fbtn on" data-f="all">All</button><button class="fbtn" data-f="genomics">Genomics &amp; oncology</button><button class="fbtn" data-f="clinical">Clinical research</button><button class="fbtn" data-f="health">Healthcare &amp; public health</button><button class="fbtn" data-f="finance">Commercial &amp; public sector</button></div>
+    <div class="cases" id="cases">
+      <article class="cs reveal" id="seqone-diagai-genomics-england" data-group="genomics" style="--d:0"><div class="cs-img"><img src="img/cases/seqone-diagai-genomics-england-v2-card.jpg" alt="Illustration of software containers passing through an airlock into a secure environment, where they connect as a pipeline" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Genomics software</span><span class="tag">Pipelines / ML</span>
+        <h3>Migrating variant classifier pipelines into the Genomics England airlock</h3>
+        <p class="prob">SeqOne needed to validate its DiagAI variant classifier on Genomics England data, inside a secure, offline environment that runs Singularity rather than Docker.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We rebuilt the Nextflow pipeline's ten containers as offline Singularity images, moved it to an updated reference sequence, and prepared the ACMG machine-learning stack for the Double Helix cluster.</p>
+          <h4>Outcome</h4><p>The validation pipeline was packaged as Singularity images ready to transfer into the Research Environment, with deterministic builds and documentation SeqOne's team can maintain.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-seqone-diagai-genomics-england.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="profid-cardiovascular-registry-analysis" data-group="clinical" style="--d:1"><div class="cs-img"><img src="img/cases/profid-cardiovascular-registry-analysis-card.jpg" alt="ECG heart rhythm trace with one beat highlighted" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Cardiovascular research</span><span class="tag">Survival analysis</span>
+        <h3>Cardiovascular registry analysis for the PROFID programme</h3>
+        <p class="prob">Charité Berlin's PROFID programme needed nine pre-specified analyses of sudden cardiac death after a heart attack, drawn from more than 140,000 patients across 20 registries.</p>
+        <div class="more">
+          <h4>Approach</h4><p>As lead analytical partner we harmonised the registries, wrote an analysis plan for each question, and applied competing-risks, time-series and multilevel methods.</p>
+          <h4>Outcome</h4><p>Nine publication-ready sub-studies delivered in European Heart Journal format, giving new evidence on which post-MI patients benefit from an ICD.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-profid-cardiovascular-registry-analysis.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="nature-commission-people-and-nature-survey" data-group="finance" style="--d:2"><div class="cs-img"><img src="img/cases/nature-commission-people-and-nature-survey-card.jpg" alt="Bar chart of how often islanders visit different natural spaces, led by beaches" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Conservation</span><span class="tag">Survey analysis</span>
+        <h3>People and Nature Survey analysis for the Nature Commission</h3>
+        <p class="prob">The Nature Commission needed its 2025 islander survey, 941 responses, turned into clear findings and an accessible public report for Guernsey and Herm.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We cleaned and analysed the responses, measured how people use natural spaces and what concerns them, and built a reproducible report in the Commission's branding.</p>
+          <h4>Outcome</h4><p>A four-page public report and a clear evidence base, including that 84% had visited a natural space in the past fortnight and which groups use nature least.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-nature-commission-people-and-nature-survey.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="hpc-for-genomics" data-group="genomics" style="--d:0"><div class="cs-img"><img src="img/cases/hpc-for-genomics.jpg" alt="DNA double helix models" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Academic research</span><span class="tag">Genomics / HPC</span>
+        <h3>High-performance computing for genomic research</h3>
+        <p class="prob">A genetics group studying hair phenotype was stalled by the compute needed to analyse very large genomic datasets and to simulate millions of genotypes accurately.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We profiled the workflow to find the bottlenecks, rewrote the R code to run in parallel on a compute cluster, added automated quality control, and built a publication-quality visualisation pipeline.</p>
+          <h4>Outcome</h4><p>Simulations that previously ran indefinitely now finish in hours, with accuracy confirmed, and the group has a scalable framework and figures ready for publication.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-hpc-for-genomics.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="cancer-genomics" data-group="genomics" style="--d:1"><div class="cs-img"><img src="img/cases/cancer-genomics-card.jpg" alt="Saudi Genome logo" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Cancer research</span><span class="tag">Cancer genomics</span>
+        <h3>Expanding cancer genomics to Arab populations</h3>
+        <p class="prob">Cancer genomics has largely been built on White European data, leaving gaps for Arab communities and weakening screening and prevention.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We built population-specific analysis pipelines on genomic data from Saudi familial-cancer patients and their relatives, identified variants in known cancer genes and classified them against existing databases.</p>
+          <h4>Outcome</h4><p>We identified prostate, colorectal and breast cancer variants specific to Arab populations, published the findings in peer-reviewed journals, and supported their use in university hospital care.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-cancer-genomics.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="single-cell-rna-sequencing-for-cell-cycle-factor-validation" data-group="genomics" style="--d:2"><div class="cs-img"><img src="img/cases/single-cell-rna-sequencing-for-cell-cycle-factor-validation-v2-card.jpg" alt="Illustration of single cells plotted as clusters, with a ring of cells tracing the cell cycle" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Biomedical research</span><span class="tag">Single-cell RNA-seq</span>
+        <h3>Single-cell RNA sequencing for cell cycle factor validation</h3>
+        <p class="prob">A team needed to make sense of sparse single-cell RNA-seq data while testing cell cycle hypotheses and explaining an unusual bimodal pattern in mitochondrial gene expression.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We handled the sparsity with pseudo-bulking, ran DESeq2 with variance-stabilising transformation, reduced dimensionality with PCA and UMAP, and delivered reproducible Jupyter notebooks.</p>
+          <h4>Outcome</h4><p>We identified clear cell cycle groupings, showed that one cluster was a technical artefact, and confirmed the expected pathway enrichment, all within eleven days.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-single-cell-rna-sequencing-for-cell-cycle-factor-validation.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="rna-seq-for-precision-oncology" data-group="genomics" style="--d:0"><div class="cs-img"><img src="img/cases/rna-seq-for-precision-oncology-v2-card.jpg" alt="Illustration of a volcano plot showing down-regulated and up-regulated genes" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Precision oncology</span><span class="tag">RNA-seq / oncology</span>
+        <h3>Rapid RNA sequencing for precision oncology</h3>
+        <p class="prob">A precision oncology centre needed a full genomic workflow for real-time clinical decisions, turning NanoString data into physician-ready reports and analysing single tumour samples without paired normals.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We combined the NanoTube Bioconductor package with a single-sample differential expression method, added quality control with fallbacks, a multi-criteria gene ranking, and automated PDF reporting.</p>
+          <h4>Outcome</h4><p>Reports now generate in under a minute for datasets of 3,800+ samples, the workflow was validated for 1,500+ samples a month, and we delivered ahead of the four-week timeline.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-rna-seq-for-precision-oncology.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="spatial-proteomics-pipeline-for-precision-oncology" data-group="genomics" style="--d:1"><div class="cs-img"><img src="img/cases/spatial-proteomics-pipeline-for-precision-oncology.jpg" alt="UMAP plot of cells grouped and labelled by cell type" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Precision oncology</span><span class="tag">Spatial proteomics</span>
+        <h3>Spatial proteomics pipeline for precision oncology</h3>
+        <p class="prob">A precision oncology centre needed to process 60-marker spatial proteomics data at clinical scale, which their bulk analysis could not handle.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We built a pipeline using Bio-Formats and QuPath for conversion, MCMICRO for segmentation and quantification, Seurat for spatial analysis, eight clinically-validated scoring algorithms, and SLURM for parallel processing.</p>
+          <h4>Outcome</h4><p>Upstream processing runs in about 1.5 hours per sample with capacity for 48+ samples a day, and the scoring reliably distinguishes immunosuppressive from standard tumour microenvironments.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-spatial-proteomics-pipeline-for-precision-oncology.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="pathogen-detection-pipeline-for-lyme-disease-diagnostics" data-group="health" style="--d:2"><div class="cs-img"><img src="img/cases/pathogen-detection-pipeline-for-lyme-disease-diagnostics.jpg" alt="Coloured electron micrograph of bacteria on a cell surface" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Diagnostics</span><span class="tag">Pathogen bioinformatics</span>
+        <h3>Pathogen detection pipeline for Lyme disease diagnostics</h3>
+        <p class="prob">A diagnostics team needed to reliably detect Borrelia and 53 other pathogens across sample types, cope with fragmented urine DNA, and separate true signals from contamination and co-infection.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We reassessed a legacy 762-target pipeline, rewrote it in Python with Pysam, added low-complexity read filtering, NCBI BLAST integration, stricter quality control and a three-tier reporting system.</p>
+          <h4>Outcome</h4><p>Mapping rate improved roughly four-fold, coverage was extended to newer Borrelia strains, and results are reported with clear confidence thresholds, delivered in ten weeks.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-pathogen-detection-pipeline-for-lyme-disease-diagnostics.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="synthetic-healthcare-data-generation-system-for-medicare-analytics" data-group="health" style="--d:0"><div class="cs-img"><img src="img/cases/synthetic-healthcare-data-generation-system-for-medicare-analytics.jpg" alt="Abstract landscape of multicoloured data columns" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Healthcare analytics</span><span class="tag">Synthetic data</span>
+        <h3>Synthetic healthcare data generation system for Medicare analytics</h3>
+        <p class="prob">A healthcare analytics company needed realistic synthetic data for testing, about six million synthetic patients that matched the statistics of real Medicare claims with clinically plausible journeys.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We built a patient-consistency system with persistent identifiers, mapped codes across clinical terminologies, generated setting-specific encounters and disease models, and added a statistical validation framework.</p>
+          <h4>Outcome</h4><p>The system generates consistent synthetic cohorts across unlimited runs, with validation that checks prevalence, comorbidity and billing alignment, giving the team a safe, realistic test environment.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-synthetic-healthcare-data-generation-system-for-medicare-analytics.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="ckd-prevalence" data-group="health" style="--d:1"><div class="cs-img"><img src="img/cases/ckd-prevalence.jpg" alt="Medical illustration of the kidneys within the human body" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Public health</span><span class="tag">Epidemiology</span>
+        <h3>Regional chronic kidney disease prevalence analysis</h3>
+        <p class="prob">A UAE healthcare provider needed accurate chronic kidney disease prevalence data to plan services and allocate resources.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We integrated data from partner institutions with quality assurance and regional harmonisation, then modelled prevalence, risk factors, severity and time trends.</p>
+          <h4>Outcome</h4><p>We delivered prevalence figures, risk-factor correlations and severity distributions that let the provider plan care and allocate resources with confidence, with monitoring continuing over time.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-ckd-prevalence.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="optimal-timing-of-anticoagulation-in-traumatic-brain-injury" data-group="clinical" style="--d:2"><div class="cs-img"><img src="img/cases/optimal-timing-of-anticoagulation-in-traumatic-brain-injury.jpg" alt="X-ray style image of a human skull and neck with the brain highlighted" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Clinical research</span><span class="tag">Predictive modelling</span>
+        <h3>Optimal timing of anticoagulation in traumatic brain injury</h3>
+        <p class="prob">Clinicians needed to know when it is safe to start anticoagulation after traumatic brain injury, balancing bleeding risk against clots, with only weak existing evidence.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We drew on National Trauma Data Bank data, used propensity-score modelling with gradient boosting, Cox proportional-hazards models and restricted cubic splines, and built a Shiny app for bedside risk prediction.</p>
+          <h4>Outcome</h4><p>We found a non-linear timing effect, with very early treatment more favourable, and gave clinicians a tool that supports a clearer window for starting treatment.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-optimal-timing-of-anticoagulation-in-traumatic-brain-injury.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="knowledge-graphs" data-group="health" style="--d:0"><div class="cs-img"><img src="img/cases/knowledge-graphs-v2-card.jpg" alt="Illustration of a network of connected clinical concepts with one cluster highlighted" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Precision medicine</span><span class="tag">Knowledge graphs</span>
+        <h3>Knowledge graphs in clinical care</h3>
+        <p class="prob">Providers were struggling to draw usable insight from large volumes of unstructured patient data, which held back precision medicine.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We designed a clinical knowledge-graph schema, built it on graph databases with clinical ontologies, added pattern recognition, and integrated it into decision support.</p>
+          <h4>Outcome</h4><p>Clinicians reach relevant patterns and insights faster, with shorter query times and better-supported care pathways, delivered in four weeks with ongoing refinement.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-knowledge-graphs.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="automating-patient-selection" data-group="clinical" style="--d:1"><div class="cs-img"><img src="img/cases/automating-patient-selection-v2-card.jpg" alt="Illustration of a grid of patient records narrowing through three screening stages to a final eligible group" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Clinical trials</span><span class="tag">Clinical automation</span>
+        <h3>Automating patient selection</h3>
+        <p class="prob">Clinical staff were spending too much time manually screening patients and analysing outcomes, taking time away from care.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We built a screening algorithm with automated eligibility checks and real-time alerts, a visual analytics dashboard, and a clinical integration layer with validation and manual review.</p>
+          <h4>Outcome</h4><p>Screening time fell by more than 90% against manual review, patient selection was around 60% faster, and accuracy improved.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-automating-patient-selection.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="ehr-automation" data-group="clinical" style="--d:2"><div class="cs-img"><img src="img/cases/ehr-automation.jpg" alt="Abstract streams of light converging on a single point" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Healthcare research</span><span class="tag">Data engineering</span>
+        <h3>Automated research data pipeline development</h3>
+        <p class="prob">Researchers faced barriers moving and analysing electronic health record data securely, and manual steps were introducing errors and hurting reproducibility.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We built API-based extraction with automated cleaning, a secure data lake, integrated statistical, machine-learning and language-model analysis, and reproducible R Markdown and Jupyter reporting with audit trails.</p>
+          <h4>Outcome</h4><p>Manual processing time fell by about 90%, analyses became fully reproducible, reporting time dropped by around three quarters, and there were no security breaches.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-ehr-automation.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="statistics-for-clinical-trials" data-group="clinical" style="--d:0"><div class="cs-img"><img src="img/cases/statistics-for-clinical-trials-v2-card.jpg" alt="Illustration of simulated trial results tracked between narrowing stopping boundaries across interim analyses" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Pharmaceutical</span><span class="tag">Biostatistics</span>
+        <h3>Statistical analysis for clinical trials</h3>
+        <p class="prob">A pharmaceutical company needed rigorous statistical analysis and regulatory compliance across FDA and European frameworks to enter new markets.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We optimised the trial design with adaptive methods and power calculations, wrote the statistical analysis plan, and ran interim analysis of efficacy and sample sizing from pilot data.</p>
+          <h4>Outcome</h4><p>Preliminary analysis time was cut by about half, data collection issues were caught early, and the approval pathway was streamlined.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-statistics-for-clinical-trials.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="intelligent-lab-analysis-app-for-health-practitioners" data-group="health" style="--d:1"><div class="cs-img"><img src="img/cases/intelligent-lab-analysis-app-for-health-practitioners.jpg" alt="Gloved hand placing a culture dish under a microscope" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Healthcare app</span><span class="tag">OCR / app</span>
+        <h3>Intelligent lab analysis app for health practitioners</h3>
+        <p class="prob">A health practitioner had a slow, manual process for reading lab reports, with new staff often making errors interpreting long documents.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We built OCR extraction from uploaded reports, analysis logic that encodes the practitioner&#x27;s expertise, a symptom-correlation engine, GDPR-compliant sign-in, and payment and supplement integrations.</p>
+          <h4>Outcome</h4><p>Analysis time fell from over 30 minutes to under a minute per report, manual-entry errors were removed, and interpretation is now consistent across reports.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-intelligent-lab-analysis-app-for-health-practitioners.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="ancestry-dna-analysis" data-group="genomics" style="--d:2"><div class="cs-img"><img src="img/cases/ancestry-dna-analysis.jpg" alt="Historical sepia portrait of a Native American person in profile" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Genetic genealogy</span><span class="tag">Genetic genealogy</span>
+        <h3>Historical DNA analysis for Native American ancestry verification</h3>
+        <p class="prob">A genealogical investigation needed DNA evidence to test a historical father-son relationship where the documentation had been lost.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We collected Y-chromosome samples, examined 30 Y-STR markers, reviewed civil and tribal records, and calculated variation rates, generational distance and relationship probabilities.</p>
+          <h4>Outcome</h4><p>The analysis found eight marker differences across 30 markers and a generational distance consistent with the claimed link, verifying paternal lineages and strengthening the historical record, over an eight-month study.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-ancestry-dna-analysis.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="analysis-of-racial-disparities-in-trauma-care-and-outcomes" data-group="clinical" style="--d:0"><div class="cs-img"><img src="img/cases/analysis-of-racial-disparities-in-trauma-care-and-outcomes.jpg" alt="Two hands of different skin tones reaching towards each other" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Health equity</span><span class="tag">Health equity</span>
+        <h3>Analysis of racial disparities in trauma care and outcomes</h3>
+        <p class="prob">A team investigating healthcare equity found substantial US racial disparities in trauma care, with some populations facing disproportionately high inter-facility transfers and worse outcomes.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We drew on National Trauma Data Bank data and applied linear regression, generalised linear models and stepwise ANOVA, with imputation and cross-validation to check robustness.</p>
+          <h4>Outcome</h4><p>The analysis quantified clear disparities in transfers, life-support decisions and length of stay, giving an evidence base for more equitable, culturally sensitive protocols.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-analysis-of-racial-disparities-in-trauma-care-and-outcomes.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="forex-prediction" data-group="finance" style="--d:1"><div class="cs-img"><img src="img/cases/forex-prediction.jpg" alt="Candlestick price chart with trend lines" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Investment banking</span><span class="tag">Predictive modelling</span>
+        <h3>Forex prediction for an investment bank</h3>
+        <p class="prob">An investment banking client needed faster, more accurate foreign-exchange forecasting to manage portfolio risk, moving off a manual Excel process.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We moved them to a web-based interface, stored data in BigQuery, built a machine-learning pipeline in SQL, Python and R with real-time processing, and validated it against fourteen years of history.</p>
+          <h4>Outcome</h4><p>The client reports faster insight, less manual work and better prediction accuracy, and has been able to serve more customers as a result.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-forex-prediction.html">Read full case →</a>
+        </div>
+      </div></article>
+      <article class="cs reveal" id="sales-analysis" data-group="finance" style="--d:2"><div class="cs-img"><img src="img/cases/sales-analysis-v2-card.jpg" alt="Illustration of overlapping distribution curves, one per market, with one market highlighted" loading="lazy"></div><div class="cs-body">
+        <span class="sec">Commercial</span><span class="tag">Statistical modelling</span>
+        <h3>Hierarchical sales analysis across key markets</h3>
+        <p class="prob">A client needed to understand how many interacting variables were driving product sales across different markets, which needed a hierarchical model.</p>
+        <div class="more">
+          <h4>Approach</h4><p>We ran principal component analysis and correlation assessment, built hierarchical structural models with seasonal and regional components, and validated the assumptions and prediction accuracy.</p>
+          <h4>Outcome</h4><p>The model reached a 0.89 correlation on sales prediction, revealed market dynamics that traditional methods missed, and improved decision-making, over roughly six weeks.</p>
+        </div>
+        <div class="row">
+          <button class="toggle" type="button" aria-expanded="false"><span class="c">›</span> <span class="lbl">Details</span></button>
+          <a class="ext" href="case-sales-analysis.html">Read full case →</a>
+        </div>
+      </div></article>
+    </div>
+    <p class="noresult" id="noresult">No case studies in this area yet.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><span class="rot"><i></i></span><img loading="lazy" decoding="async" src="img/umbizo-logo.png" alt="Umbizo"></a>
+        <p class="bd">Turning complex data into answers that clinical, research and commercial teams can act on.</p>
+        <a class="foot-mail js-mail" href="contact.html" data-u="info" data-d="umbizo.co.uk" data-hot>Email us →</a>
+      </div>
+      <div class="foot-connect">
+        <div class="foot-social">
+          <a class="soc" href="https://www.linkedin.com/company/umbizo/" target="_blank" rel="noopener" data-hot aria-label="Umbizo on LinkedIn" title="Umbizo on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.73v20.53C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.73C24 .78 23.2 0 22.22 0z"/></svg></a>
+          <a class="soc" href="https://umbizo.github.io/" target="_blank" rel="noopener" data-hot aria-label="Umbizo on GitHub" title="Umbizo on GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        </div>
+        <div class="foot-links">
+          <a href="contact.html" data-hot>Enquire</a>
+          <a href="privacy.html" data-hot>Privacy policy</a>
+        </div>
+        <div class="foot-certs">
+          <img loading="lazy" decoding="async" class="cert ce" src="img/cert-cyber-essentials-plus.png" alt="Cyber Essentials Plus certified">
+          <img loading="lazy" decoding="async" class="cert dspt" src="img/cert-nhs-dspt.png" alt="NHS Data Security and Protection Toolkit: Standards exceeded">
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Umbizo Limited · Company No. 11601159, England &amp; Wales</span>
+      <span class="ico">ICO registered · <a href="https://ico.org.uk/ESDWebPages/Search" target="_blank" rel="noopener">reference&nbsp;ZC078294</a></span>
+      <span>Manchester &amp; Guernsey</span>
+    </div>
+  </div>
+</footer>
+<script>
+document.documentElement.classList.add('js');
+function __reveal(){try{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});}catch(_){}}
+setTimeout(__reveal,2600);
+window.addEventListener('error',__reveal);
+(function(){
+  try{
+    var nav=document.getElementById('nav');
+    var els=[].slice.call(document.querySelectorAll('.reveal'));
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0,rootMargin:'0px 0px -6% 0px'});
+      els.forEach(function(e){io.observe(e);});
+    } else { __reveal(); }
+    function onscroll(){ (window.scrollY>40)?nav.classList.add('solid'):nav.classList.remove('solid'); }
+    addEventListener('scroll',onscroll,{passive:true}); onscroll();
+  }catch(e){ __reveal(); }
+})();
+
+(function(){
+  try{
+    var btns=[].slice.call(document.querySelectorAll('.fbtn'));
+    var cards=[].slice.call(document.querySelectorAll('.cs'));
+    var none=document.getElementById('noresult');
+    btns.forEach(function(b){b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('on');}); b.classList.add('on');
+      var f=b.getAttribute('data-f'); var shown=0;
+      cards.forEach(function(c){var m=(f==='all'||c.getAttribute('data-group')===f);c.style.display=m?'':'none';if(m)shown++;});
+      if(none)none.style.display=shown?'none':'block';
+    });});
+    document.querySelectorAll('.cs .toggle').forEach(function(t){t.addEventListener('click',function(){
+      var cs=t.closest('.cs'); var open=cs.classList.toggle('open');
+      t.setAttribute('aria-expanded',open?'true':'false');
+      t.querySelector('.lbl').textContent=open?'Hide':'Details';
+    });});
+  }catch(e){}
+})();
+</script>
+<script>
+(function(){try{
+  function openHash(){var id=location.hash.slice(1);if(!id)return;var el=document.getElementById(id);
+    if(el){el.classList.add('open');var t=el.querySelector('.toggle');if(t){t.setAttribute('aria-expanded','true');var l=t.querySelector('.lbl');if(l)l.textContent='Hide';}
+    setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},200);}}
+  addEventListener('hashchange',openHash); openHash();
+}catch(e){}})();
+</script>
+<script>
+(function(){try{
+  var sec=new URLSearchParams(location.search).get('sector');
+  if(!sec)return;
+  var btn=document.querySelector('.fbtn[data-f="'+sec+'"]');
+  if(btn){btn.click();var f=document.querySelector('.filters');if(f){requestAnimationFrame(function(){f.scrollIntoView({behavior:'smooth',block:'start'});});}}
+}catch(e){}})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.cs').forEach(function(card){
+    card.addEventListener('click',function(e){
+      if(e.target.closest('a,button,.toggle,input,label')) return;
+      var id=card.id; if(id) window.location.href='case-'+id+'.html';
+    });
+  });
+})();
+</script>
+<script>
+(function(){var n=document.getElementById('nav'),b=n&&n.querySelector('.nav-burger');if(!b)return;
+function set(o){n.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Menu');}
+b.addEventListener('click',function(){set(!n.classList.contains('open'));});
+n.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){set(false);});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+addEventListener('resize',function(){if(innerWidth>920)set(false);});})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.js-mail').forEach(function(a){a.href='mailto:'+a.getAttribute('data-u')+'@'+a.getAttribute('data-d');});
+  try{
+    var framed=false;try{framed=window.self!==window.top;}catch(e){framed=true;}
+    var goTop=function(){try{window.scrollTo({top:0,left:0,behavior:'instant'});}catch(e){try{window.scrollTo(0,0);}catch(_){}}};
+    var nav=(performance.getEntriesByType&&performance.getEntriesByType('navigation')[0])||{};
+    var hash=(location.hash||'').slice(1),target=false;try{target=!!(hash&&document.getElementById(decodeURIComponent(hash)));}catch(e){}
+    var keep=target||/[?&]sector=/.test(location.search);
+    if(!keep&&(framed||!nav.type||nav.type==='navigate')){
+      if(framed){try{history.scrollRestoration='manual';}catch(e){}}
+      var touched=false;['wheel','touchstart','keydown','mousedown'].forEach(function(ev){addEventListener(ev,function(){touched=true;},{passive:true,once:true});});
+      var top=function(){if(!touched)goTop();};
+      top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',top);
+      if(framed){[60,200,500,900].forEach(function(t){setTimeout(top,t);});}
+    }
+    if(framed){
+      /* an embedding frame can carry the old scroll position over to the next page, so reset it on the way out */
+      addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(a.target==='_blank'||/^(https?:|mailto:|tel:|#)/.test(h)||h.indexOf('#')>-1||/[?&]sector=/.test(h))return;goTop();},true);
+      addEventListener('pagehide',goTop);
+    }
+    var here=location.pathname.split('/').pop()||'index.html';
+    try{var c=document.querySelector('link[rel="canonical"]');if(c){here=c.getAttribute('href').split('?')[0].split('/').pop()||'index.html';}}catch(e){}
+    document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(h===here&&!a.closest('main')){a.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});}});
+  }catch(e){}
+})();
+</script>

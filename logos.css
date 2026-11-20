@@ -1,0 +1,26 @@
+/* client logo wall — mono white, blooms to colour at centre */
+.clients{padding:0 0 clamp(88px,12vw,150px);position:relative;z-index:2}
+.clients-lbl{display:block;text-align:center;font:600 12px/1 'DM Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.56);margin-bottom:10px}
+.logo-mask{overflow:hidden;position:relative;width:100%;padding:30px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.logo-track{--gap:46px;position:relative;display:flex;align-items:center;gap:var(--gap);padding-right:var(--gap);width:max-content;animation:logoscroll 60s linear infinite}
+.logo-mask:hover .logo-track{animation-play-state:paused}
+.lg{--s:1;position:relative;flex:0 0 auto;width:calc(var(--w)*var(--s));height:calc(64px*var(--s));will-change:transform}
+.lg .mono,.lg .col{position:absolute;inset:0;background-repeat:no-repeat;background-position:center;background-size:auto calc(var(--h)*var(--s))}
+.lg .mono{background-image:var(--mono);opacity:.6}
+.lg .col{background-image:var(--col);opacity:0}
+.lg .tile{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:calc(100% + 70px);height:150%;border-radius:50%;background:radial-gradient(ellipse at center,rgba(94,124,255,.26),rgba(94,124,255,.09) 45%,transparent 72%);opacity:0;pointer-events:none;z-index:-1}
+@keyframes logoscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:640px){.lg{--s:.8}.logo-track{--gap:32px}}
+.lg-envita{--w:87px;--h:43px;--mono:url("img/logos/envita-mono.png");--col:url("img/logos/envita-col.png")}
+.lg-genetic-first{--w:162px;--h:28px;--mono:url("img/logos/genetic-first-mono.png");--col:url("img/logos/genetic-first-col.png")}
+.lg-careset{--w:53px;--h:50px;--mono:url("img/logos/careset-mono.png");--col:url("img/logos/careset-col.png")}
+.lg-ovawise{--w:157px;--h:29px;--mono:url("img/logos/ovawise-mono.png");--col:url("img/logos/ovawise-col.png")}
+.lg-saudi-genome{--w:44px;--h:50px;--mono:url("img/logos/saudi-genome-mono.png");--col:url("img/logos/saudi-genome-col.png")}
+.lg-healthlab{--w:180px;--h:27px;--mono:url("img/logos/healthlab-mono.png");--col:url("img/logos/healthlab-col.png")}
+.lg-emory{--w:133px;--h:34px;--mono:url("img/logos/emory-mono.png");--col:url("img/logos/emory-col.png")}
+.lg-umich{--w:53px;--h:50px;--mono:url("img/logos/umich-mono.png");--col:url("img/logos/umich-col.png")}
+.lg-aster{--w:52px;--h:50px;--mono:url("img/logos/aster-mono.png");--col:url("img/logos/aster-col.png")}
+.lg-profid{--w:154px;--h:27px;--mono:url("img/logos/profid-mono.png");--col:url("img/logos/profid-col.png")}
+.lg-convatec{--w:128px;--h:31px;--mono:url("img/logos/convatec-mono.png");--col:url("img/logos/convatec-col.png")}
+.lg-guernsey{--w:48px;--h:50px;--mono:url("img/logos/guernsey-mono.png");--col:url("img/logos/guernsey-col.png")}
+.lg-hazdocs{--w:146px;--h:28px;--mono:url("img/logos/hazdocs-mono.png");--col:url("img/logos/hazdocs-col.png")}

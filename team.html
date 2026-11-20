@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en-GB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Team | Umbizo</title>
+<meta name="description" content="Meet the PhD-led team of statisticians, bioinformaticians, data scientists and engineers behind Umbizo.">
+<link rel="canonical" href="https://umbizo.co.uk/team.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Umbizo">
+<meta property="og:title" content="Team | Umbizo">
+<meta property="og:description" content="Meet the PhD-led team of statisticians, bioinformaticians, data scientists and engineers behind Umbizo.">
+<meta property="og:url" content="https://umbizo.co.uk/team.html">
+<meta property="og:image" content="https://umbizo.co.uk/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08090C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ink:#08090C; --ink-1:#0C0E13; --ink-2:#12141B;
+    --line:rgba(255,255,255,0.09); --line-2:rgba(255,255,255,0.16);
+    --fg:#EDEEF2; --fg-2:#9CA1B2; --fg-3:#7C8296;
+    --blue:#012FFF; --blue-lit:#5E7CFF; --blue-glow:rgba(1,47,255,0.55);
+    --magenta:#FB2666; --magenta-lit:#FF6E97; --magenta-glow:rgba(251,38,102,0.5);
+    --serif:'DM Serif Display',Georgia,serif; --sans:'DM Sans',system-ui,-apple-system,sans-serif; --mono:'DM Mono',ui-monospace,monospace;
+    --e:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{background:var(--ink);color:var(--fg);font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(22px,4vw,52px)}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacing:-0.012em}
+  .grad{color:var(--blue-lit)}
+
+  .rot{width:24px;height:24px;position:relative;flex:0 0 auto;animation:spin 8s linear infinite}
+  .rot::before{content:"";position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--line-2)}
+  .rot i{position:absolute;inset:0}
+  .rot i::before,.rot i::after{content:"";position:absolute;left:50%;width:5px;height:5px;border-radius:50%;transform:translateX(-50%)}
+  .rot i::before{top:-1.5px;background:var(--blue-lit);box-shadow:0 0 8px var(--blue-glow)}
+  .rot i::after{bottom:-1.5px;background:var(--magenta-lit);box-shadow:0 0 8px var(--magenta-glow)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media(prefers-reduced-motion:reduce){.rot{animation:none}}
+
+  .bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:var(--ink)}
+  .bg .grid{position:absolute;inset:-2px;background-image:linear-gradient(rgba(94,124,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(94,124,255,.055) 1px,transparent 1px);background-size:66px 66px;-webkit-mask-image:radial-gradient(130% 100% at 50% 6%,#000 24%,transparent 76%);mask-image:radial-gradient(130% 100% at 50% 6%,#000 24%,transparent 76%);opacity:.6}
+  .bg .glow{position:absolute;border-radius:50%}
+  .bg .g1{width:1040px;height:1040px;background:radial-gradient(circle closest-side,rgba(1,47,255,.185),rgba(1,47,255,.105) 38%,rgba(1,47,255,.035) 64%,transparent 100%);top:calc(-16% - 200px);left:calc(-10% - 200px)}
+  .bg .g2{width:960px;height:960px;background:radial-gradient(circle closest-side,rgba(251,38,102,.115),rgba(251,38,102,.065) 38%,rgba(251,38,102,.022) 64%,transparent 100%);bottom:calc(-14% - 200px);right:calc(-8% - 200px)}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:8000;height:80px;display:flex;align-items:center;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+  nav.solid{background:rgba(8,9,12,0.62);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:24px;width:auto;display:block}
+  .nav-links{display:flex;gap:34px;font-size:14px;color:var(--fg-2)}
+  .nav-links a{position:relative;transition:color .25s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:linear-gradient(90deg,var(--blue-lit),var(--magenta-lit));transition:width .3s var(--e)}
+  .nav-links a:hover{color:var(--fg)}.nav-links a:hover::after{width:100%}
+  .nav-links a.on{color:var(--fg)}.nav-links a.on::after{width:100%}
+  .nav-cta{font-size:13.5px;border:1px solid var(--line-2);border-radius:999px;padding:10px 20px;transition:border-color .3s,color .3s,box-shadow .3s}
+  .nav-cta:hover{border-color:var(--blue-lit);color:var(--blue-lit);box-shadow:0 0 26px -6px var(--blue-glow)}
+  @media(max-width:880px){.nav-links{display:none}}
+
+  main{position:relative;z-index:1}
+
+  /* PAGE HERO */
+  .phero{padding:clamp(130px,17vh,190px) 0 clamp(40px,6vw,64px)}
+  .over{font-family:var(--mono);font-size:11.5px;letter-spacing:0.26em;text-transform:uppercase;color:var(--fg-3);display:inline-flex;align-items:center;gap:10px}
+  .over .m{color:var(--blue-lit)}
+  .phero h1{font-size:clamp(40px,6.4vw,82px);max-width:16ch;margin-top:20px}
+  .phero h1 .i{font-style:normal}
+  .phero .lead{margin-top:22px;max-width:56ch;color:var(--fg-2);font-size:clamp(16px,1.5vw,18px)}
+  .phero .meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px;font-family:var(--mono);font-size:12px;letter-spacing:0.06em;color:var(--fg-3)}
+  .phero .meta span{position:relative;padding-left:16px}
+  .phero .meta span::before{content:"";position:absolute;left:0;top:50%;width:5px;height:5px;border-radius:50%;background:var(--blue-lit);transform:translateY(-50%);box-shadow:0 0 8px var(--blue-glow)}
+
+  /* GRID */
+  .team{padding-bottom:clamp(80px,11vw,140px)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:1080px){.grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+  @media(max-width:460px){.grid{grid-template-columns:1fr}}
+
+  .tm{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(18,20,27,.6),rgba(12,14,19,.35));display:flex;flex-direction:column;transition:border-color .35s,transform .5s var(--e),box-shadow .35s}
+  .tm:hover{border-color:var(--line-2);transform:translateY(-6px);box-shadow:0 30px 70px -34px var(--blue-glow)}
+  .tm .photo{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--ink-2)}
+  .tm .mono{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .tm .mono span{font-family:var(--serif);font-size:clamp(38px,5vw,58px);color:rgba(255,255,255,.92);letter-spacing:.02em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+  .tm .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.05) brightness(1.03);transition:transform .6s var(--e),filter .6s}
+.photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(160deg,rgba(1,47,255,.42),rgba(251,38,102,.16));mix-blend-mode:soft-light;opacity:1;transition:opacity .6s;z-index:2}
+.tm:hover .photo img{filter:grayscale(0%) contrast(1.02)}
+.tm:hover .photo::after{opacity:0}
+  .tm:hover .photo img{transform:scale(1.05);filter:grayscale(0) contrast(1.05)}
+  .tm .scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 55%,rgba(8,9,12,.55) 100%)}
+  .tm .info{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1;border-top:1px solid var(--line)}
+  .tm .nm{font-family:var(--serif);font-size:clamp(19px,1.5vw,22px);line-height:1.1}
+  .tm .rl{margin-top:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:0.09em;text-transform:uppercase;color:var(--blue-lit);line-height:1.35}
+  .tm .bio{margin-top:12px;color:var(--fg-2);font-size:13.5px;line-height:1.55}
+  .tm .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:16px}
+  .tm .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:0.02em;color:var(--fg-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:rgba(94,124,255,.05)}
+
+  .reveal{opacity:0;transform:translateY(28px);filter:blur(6px);transition:opacity .9s var(--e),transform .9s var(--e),filter .9s var(--e);transition-delay:calc(var(--d,0) * 70ms)}
+  .reveal.in{opacity:1;transform:none;filter:none}
+  html:not(.js) .reveal{opacity:1;transform:none;filter:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;filter:none;transition:none}}
+
+  /* CTA strip */
+  .join{position:relative;text-align:center;padding:clamp(70px,10vw,120px) 0;border-top:1px solid var(--line);overflow:hidden}
+  .join::before{content:"";position:absolute;inset:0;background:radial-gradient(58% 80% at 50% 30%,rgba(1,47,255,.16),transparent 70%);pointer-events:none}
+  .join>*{position:relative}
+  .join .k{font-family:var(--mono);font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:var(--blue-lit)}
+  .join h2{font-size:clamp(30px,4.6vw,54px);margin-top:16px}
+  .join p{color:var(--fg-2);max-width:46ch;margin:18px auto 0;font-size:16px}
+  .join .btn{display:inline-flex;align-items:center;gap:12px;margin-top:34px;border-radius:999px;padding:16px 32px;font-size:15px;font-weight:500;color:#fff;background:linear-gradient(100deg,var(--blue),#2748ff);box-shadow:0 0 0 1px rgba(255,255,255,.08),0 20px 54px -16px var(--blue-glow);transition:transform .3s var(--e),box-shadow .3s}
+  .join .btn:hover{transform:translateY(-3px);box-shadow:0 0 0 1px rgba(255,255,255,.14),0 28px 70px -16px var(--blue-glow)}
+
+  footer{border-top:1px solid var(--line);padding:70px 0 44px;position:relative;z-index:1}
+  .foot-top{display:grid;grid-template-columns:1.3fr 1.7fr;gap:clamp(36px,5vw,72px);align-items:start}
+  .foot-brand .brand{margin-bottom:18px}
+  .foot-brand .bd{color:var(--fg-2);font-size:15px;line-height:1.6;max-width:34ch}
+  .foot-mail{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:var(--mono);font-size:13.5px;color:var(--fg);border:1px solid var(--line-2);border-radius:999px;padding:11px 20px;transition:border-color .3s,color .3s,box-shadow .3s}
+  .foot-mail:hover{border-color:var(--blue-lit);color:var(--blue-lit);box-shadow:0 0 26px -6px var(--blue-glow)}
+  .foot-connect{display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-start;gap:24px}
+  .foot-social{display:flex;gap:12px}
+  .foot-social .soc{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.11);color:var(--fg-3);transition:color .35s var(--e),border-color .35s var(--e),transform .35s var(--e)}
+  .foot-social .soc:hover{color:var(--fg);border-color:var(--blue-lit);transform:translateY(-2px)}
+  .foot-social .soc svg{width:20px;height:20px}
+  .foot-links{display:flex;gap:28px;font-family:var(--mono);font-size:13.5px;letter-spacing:0.02em}
+  .foot-links a{color:var(--fg-2);transition:color .25s}
+  .foot-links a:hover{color:var(--blue-lit)}
+  .foot-certs{display:flex;gap:20px;align-items:center;margin-top:4px}
+  .foot-certs .cert{width:auto;display:block;opacity:.72;transition:opacity .3s var(--e)}
+  .foot-certs .cert:hover{opacity:1}
+  .foot-certs .cert.ce{height:48px}
+  .foot-certs .cert.dspt{height:30px}
+  .fbot{margin-top:56px;padding-top:26px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:12px;color:var(--fg-3)}
+  @media(max-width:820px){.foot-top{grid-template-columns:1fr;gap:40px}}
+  @media(max-width:820px){.foot-connect{align-items:flex-start}}
+html{scroll-padding-top:96px}
+.roster{display:block}
+.grp{font-family:var(--serif);font-size:clamp(20px,2vw,27px);line-height:1.1;color:var(--fg);margin:54px 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:12px}
+.roster > .grp:first-child{margin-top:4px}
+.grp .gc{font-family:var(--mono);font-size:12px;color:var(--blue-lit);letter-spacing:.08em}
+.roster .grid{margin-bottom:4px}
+
+  /* mobile menu */
+  .nav-burger{display:none;width:44px;height:44px;margin-left:10px;border:1px solid var(--line-2);border-radius:50%;background:transparent;color:var(--fg);cursor:pointer;align-items:center;justify-content:center;flex:0 0 auto;padding:0}
+  .nav-burger span{display:block;width:16px;height:1.5px;background:currentColor;position:relative;transition:background .2s}
+  .nav-burger span::before,.nav-burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:currentColor;transition:transform .3s cubic-bezier(.16,1,.3,1),top .3s cubic-bezier(.16,1,.3,1)}
+  .nav-burger span::before{top:-5px}.nav-burger span::after{top:5px}
+  nav.open .nav-burger span{background:transparent}
+  nav.open .nav-burger span::before{top:0;transform:rotate(45deg)}
+  nav.open .nav-burger span::after{top:0;transform:rotate(-45deg)}
+  @media(max-width:920px){
+    .nav-burger{display:inline-flex}
+    nav .nav-cta{margin-left:auto}
+    nav .nav-links{display:none;position:fixed;top:80px;left:0;right:0;flex-direction:column;gap:0;padding:6px clamp(22px,4vw,52px) 26px;background:#08090C;border-bottom:1px solid var(--line);font-size:19px;max-height:calc(100vh - 80px);overflow:auto}
+    nav.open .nav-links{display:flex}
+    nav .nav-links a{padding:17px 0;border-bottom:1px solid var(--line);color:var(--fg)}
+    nav .nav-links a:last-child{border-bottom:0}
+    nav .nav-links a::after{display:none}
+    nav.open{background:#08090C;border-bottom-color:var(--line)}
+  }
+</style>
+
+<div class="bg"><div class="grid"></div><div class="glow g1"></div><div class="glow g2"></div></div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="rot"><i></i></span><img src="img/umbizo-logo.png" alt="Umbizo"></a>
+    <div class="nav-links" id="navLinks">
+      <a href="cases.html">Case studies</a><a href="team.html" class="on">Team</a><a href="publications.html">Publications</a><a href="faq.html">FAQ</a><a href="index.html#about">About</a>
+    </div>
+    <a class="nav-cta" href="contact.html">Enquire</a>
+    <button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <h1 class="reveal" style="--d:1">The people behind the <span class="i grad">answers.</span></h1>
+      <p class="lead reveal" style="--d:2">A PhD-led team of statisticians, bioinformaticians, data scientists and engineers. When you work with Umbizo, you work directly with the specialists themselves, not a layer between you and them.</p>
+      
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="wrap">
+      <div class="roster">
+<h2 class="grp reveal">Leadership <span class="gc">2</span></h2>
+<div class="grid">
+<article class="tm reveal" style="--d:0">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>ZK</span></div>
+          <img src="img/team/zoher-kapacee.jpg" alt="Zoher Kapacee" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Zoher Kapacee</h3>
+          <p class="rl">CEO &amp; Co-founder</p>
+          <p class="bio">Zoher is a strategic technology leader with a PhD in Regenerative Medicine, an MBA with Distinction from Alliance Manchester Business School and an INSEAD Certificate in Artificial Intelligence. He specialises in healthcare innovation and emerging technologies.</p>
+          <div class="tags"><span class="tag">Healthcare innovation</span><span class="tag">Digital transformation</span><span class="tag">AI strategy</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:1">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(170deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>HR</span></div>
+          <img src="img/team/heather-robinson.jpg" alt="Heather Robinson" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Heather Robinson</h3>
+          <p class="rl">CTO &amp; Co-founder</p>
+          <p class="bio">Heather is a Principal Statistician with a PhD in Genetics, specialising in biostatistics and machine learning. She develops algorithms and data pipelines to analyse large datasets and optimise clinical trials.</p>
+          <div class="tags"><span class="tag">Biostatistics</span><span class="tag">Machine learning</span><span class="tag">Clinical trials</span></div>
+        </div>
+      </article>
+</div>
+<h2 class="grp reveal">Engineering <span class="gc">5</span></h2>
+<div class="grid">
+<article class="tm reveal" style="--d:0">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>AA</span></div>
+          <img src="img/team/ahmad-adebowale.jpg" alt="Ahmad Adebowale" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Ahmad Adebowale</h3>
+          <p class="rl">Context Engineer &amp; AI Automation Specialist</p>
+          <p class="bio">Ahmad is a statistician, AI automation specialist and context engineer, supporting our platform development and research innovation.</p>
+          <div class="tags"><span class="tag">Statistics</span><span class="tag">AI automation</span><span class="tag">Context engineering</span><span class="tag">Platform development</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:1">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(170deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>VA</span></div>
+          <img src="img/team/vasu-deva-reddy-anumula.jpg" alt="Vasu Deva Reddy Anumula" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Vasu Deva Reddy Anumula</h3>
+          <p class="rl">Full Stack Developer</p>
+          <p class="bio">Vasu has broad technical expertise across front and back end development and AI engineering. He oversees our platform development and mentors our interns.</p>
+          <div class="tags"><span class="tag">Full stack</span><span class="tag">AI engineering</span><span class="tag">Platform development</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:2">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(195deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>OD</span></div>
+          <img src="img/team/ollie-darwin.jpg" alt="Ollie Darwin" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Ollie Darwin</h3>
+          <p class="rl">Software Engineer</p>
+          <p class="bio">Ollie has broad experience across back and front-end development, mathematics, AI and machine learning.</p>
+          <div class="tags"><span class="tag">Software engineering</span><span class="tag">AI development</span><span class="tag">Full stack</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:3">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(170deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>SA</span></div>
+          <img src="img/team/shamun-awan.jpg" alt="Shamun Awan" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Shamun Awan</h3>
+          <p class="rl">Data Engineer</p>
+          <p class="bio">Shamun is a specialist in big data and data engineering with scalable cloud solutions, supporting our workflow orchestration.</p>
+          <div class="tags"><span class="tag">Data engineering</span><span class="tag">Big data</span><span class="tag">Cloud solutions</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:4">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(195deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>ST</span></div>
+          <img src="img/team/sohaib-tanveer.jpg" alt="Sohaib Tanveer" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Sohaib Tanveer</h3>
+          <p class="rl">Data Engineer</p>
+          <p class="bio">Sohaib specialises in data engineering and cloud infrastructure, building the scalable pipelines that keep our workflows running smoothly.</p>
+          <div class="tags"><span class="tag">Data engineering</span><span class="tag">Big data</span><span class="tag">Cloud solutions</span></div>
+        </div>
+      </article>
+</div>
+<h2 class="grp reveal">Science <span class="gc">4</span></h2>
+<div class="grid">
+<article class="tm reveal" style="--d:0">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(195deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>DL</span></div>
+          <img src="img/team/dave-lee.jpg" alt="Dave Lee" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Dave Lee</h3>
+          <p class="rl">Head of Bioinformatics</p>
+          <p class="bio">Dave is our Principal Bioinformatics Scientist and Head of Bioinformatics, leading genomics and clinical data pipeline work across the team.</p>
+          <div class="tags"><span class="tag">Bioinformatics</span><span class="tag">Team leadership</span><span class="tag">Multiomics</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:1">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(195deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>AB</span></div>
+          <img src="img/team/amina-boudamaana.jpg" alt="Amina Boudamaana" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Amina Boudamaana</h3>
+          <p class="rl">Epidemiologist</p>
+          <p class="bio">Amina brings deep knowledge in biostatistics and public health analytics.</p>
+          <div class="tags"><span class="tag">Epidemiology</span><span class="tag">Public health</span><span class="tag">Biostatistics</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:2">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(170deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>JR</span></div>
+          <img src="img/team/jimena-roces.jpg" alt="Jimena Roces" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Jimena Roces</h3>
+          <p class="rl">Research Associate</p>
+          <p class="bio">Jimena supports our bioinformatics vertical with research and analysis, working closely with Dave&#x27;s team on genomics and clinical data projects.</p>
+          <div class="tags"><span class="tag">Bioinformatics</span><span class="tag">Research</span><span class="tag">Clinical data</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:3">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>AZ</span></div>
+          <img src="img/team/ali-zavery.jpg" alt="Ali Zavery" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Ali Zavery</h3>
+          <p class="rl">Mathematician &amp; Algorithmic Specialist</p>
+          <p class="bio">Ali is a mathematician and algorithmic specialist with front-end skills and project strategy experience, bringing mathematical rigour to our data science work.</p>
+          <div class="tags"><span class="tag">Mathematics</span><span class="tag">Algorithms</span><span class="tag">Front-end</span><span class="tag">Project strategy</span></div>
+        </div>
+      </article>
+</div>
+<h2 class="grp reveal">Data Analysis <span class="gc">5</span></h2>
+<div class="grid">
+<article class="tm reveal" style="--d:0">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(170deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>HR</span></div>
+          <img src="img/team/hassan-raza.jpg" alt="Hassan Raza" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Hassan Raza</h3>
+          <p class="rl">Data Scientist</p>
+          <p class="bio">Hassan specialises in machine learning and turning complex datasets into insights that support decision-making.</p>
+          <div class="tags"><span class="tag">Machine learning</span><span class="tag">Data analysis</span><span class="tag">Decision support</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:1">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>IV</span></div>
+          <img src="img/team/irini-verbist.jpg" alt="Irini Verbist" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Irini Verbist</h3>
+          <p class="rl">Data Scientist</p>
+          <p class="bio">Irini specialises in the quantitative analysis of clinical and real-world data.</p>
+          <div class="tags"><span class="tag">Quantitative analysis</span><span class="tag">Clinical data</span><span class="tag">Real-world evidence</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:2">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(195deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>NG</span></div>
+          <img src="img/team/nishat-girkar.jpg" alt="Nishat Girkar" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Nishat Girkar</h3>
+          <p class="rl">Data Scientist</p>
+          <p class="bio">Nishat specialises in healthcare analytics and AI governance, turning complex data into insights that support ethical, evidence-based decisions.</p>
+          <div class="tags"><span class="tag">Healthcare analytics</span><span class="tag">AI governance</span><span class="tag">Ethical AI</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:3">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(170deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>CC</span></div>
+          <img src="img/team/claire-coffey.jpg" alt="Claire Coffey" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Claire Coffey</h3>
+          <p class="rl">Data Scientist</p>
+          <p class="bio">Claire is a data scientist with big data experience and deep knowledge of health data and algorithmic fairness.</p>
+          <div class="tags"><span class="tag">Big data</span><span class="tag">Health data</span><span class="tag">Algorithmic fairness</span><span class="tag">Data science</span></div>
+        </div>
+      </article>
+<article class="tm reveal" style="--d:4">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>MJ</span></div>
+          <img src="img/team/manali-jain.jpg" alt="Manali Jain" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Manali Jain</h3>
+          <p class="rl">Clinical Data Analyst</p>
+          <p class="bio">Manali is a clinical data specialist with experience in quantitative analytics, predictive modelling and Power BI dashboarding.</p>
+          <div class="tags"><span class="tag">Clinical data</span><span class="tag">Predictive modelling</span><span class="tag">Data visualisation</span></div>
+        </div>
+      </article>
+</div>
+<h2 class="grp reveal">Project Management <span class="gc">3</span></h2>
+<div class="grid">
+<article class="tm reveal" style="--d:0">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>MA</span></div>
+          <img src="img/team/manar-al-nabahin.jpg" alt="Manar Al-Nabahin" loading="lazy" style="object-position:center 20%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Manar Al-Nabahin</h3>
+          <p class="rl">Lead Project Manager</p>
+          <p class="bio">Manar leads our project management function, shaping how each engagement is planned and run so the right people, scope and timelines are in place from the first conversation onwards.</p>
+          <div class="tags"><span class="tag">Project leadership</span><span class="tag">Planning</span><span class="tag">Client delivery</span></div>
+        </div>
+      </article>
+      <article class="tm reveal" style="--d:1">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>MB</span></div>
+          <img src="img/team/melissa-brookfield.jpg" alt="Melissa Brookfield" loading="lazy" style="object-position:center 15%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Melissa Brookfield</h3>
+          <p class="rl">Project Manager</p>
+          <p class="bio">Melissa keeps our projects on track, coordinating across teams so delivery stays smooth from kick-off through to handover.</p>
+          <div class="tags"><span class="tag">Project management</span><span class="tag">Team coordination</span><span class="tag">Delivery</span></div>
+        </div>
+      </article>
+      <article class="tm reveal" style="--d:2">
+        <div class="photo">
+          <div class="mono" style="background:linear-gradient(145deg,rgba(1,47,255,.9),rgba(251,38,102,.85))"><span>RB</span></div>
+          <img src="img/team/rachel-bennett.jpg" alt="Rachel Bennett" loading="lazy" style="object-position:center 18%" onerror="this.style.display='none'">
+          <div class="scrim"></div>
+        </div>
+        <div class="info">
+          <h3 class="nm">Rachel Bennett</h3>
+          <p class="rl">Administrator</p>
+          <p class="bio">Rachel keeps the day-to-day running smoothly, handling scheduling, documents and the practical details that keep projects and clients moving.</p>
+          <div class="tags"><span class="tag">Administration</span><span class="tag">Coordination</span><span class="tag">Operations</span></div>
+        </div>
+      </article>
+</div>
+</div>
+    </div>
+  </section>
+
+  <section class="join">
+    <div class="wrap">
+      <p class="k reveal">Work with us</p>
+      <h2 class="reveal" style="--d:1">The right specialists on your problem.</h2>
+      <p class="reveal" style="--d:2">Tell us what you are trying to work out, and we will put the people who understand it in front of you.</p>
+      <a class="btn reveal" href="contact.html" style="--d:3">Start a conversation <span class="a">→</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><span class="rot"><i></i></span><img loading="lazy" decoding="async" src="img/umbizo-logo.png" alt="Umbizo"></a>
+        <p class="bd">Turning complex data into answers that clinical, research and commercial teams can act on.</p>
+        <a class="foot-mail js-mail" href="contact.html" data-u="info" data-d="umbizo.co.uk" data-hot>Email us →</a>
+      </div>
+      <div class="foot-connect">
+        <div class="foot-social">
+          <a class="soc" href="https://www.linkedin.com/company/umbizo/" target="_blank" rel="noopener" data-hot aria-label="Umbizo on LinkedIn" title="Umbizo on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.73v20.53C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.73C24 .78 23.2 0 22.22 0z"/></svg></a>
+          <a class="soc" href="https://umbizo.github.io/" target="_blank" rel="noopener" data-hot aria-label="Umbizo on GitHub" title="Umbizo on GitHub"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        </div>
+        <div class="foot-links">
+          <a href="contact.html" data-hot>Enquire</a>
+          <a href="privacy.html" data-hot>Privacy policy</a>
+        </div>
+        <div class="foot-certs">
+          <img loading="lazy" decoding="async" class="cert ce" src="img/cert-cyber-essentials-plus.png" alt="Cyber Essentials Plus certified">
+          <img loading="lazy" decoding="async" class="cert dspt" src="img/cert-nhs-dspt.png" alt="NHS Data Security and Protection Toolkit: Standards exceeded">
+        </div>
+      </div>
+    </div>
+    <div class="fbot"><span>© 2026 Umbizo Limited · Company No. 11601159, England &amp; Wales</span><span>ICO registered · <a href="https://ico.org.uk/ESDWebPages/Search" target="_blank" rel="noopener" style="color:inherit">ZC078294</a></span><span>Manchester &amp; Guernsey</span></div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+function __reveal(){try{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});}catch(_){}}
+setTimeout(__reveal,2600);
+window.addEventListener('error',__reveal);
+(function(){
+  try{
+    var nav=document.getElementById('nav');
+    var els=[].slice.call(document.querySelectorAll('.reveal'));
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0,rootMargin:'0px 0px -6% 0px'});
+      els.forEach(function(e){io.observe(e);});
+    } else { __reveal(); }
+    function onscroll(){ (window.scrollY>40)?nav.classList.add('solid'):nav.classList.remove('solid'); }
+    addEventListener('scroll',onscroll,{passive:true}); onscroll();
+  }catch(e){ __reveal(); }
+})();
+</script>
+<script>
+(function(){var n=document.getElementById('nav'),b=n&&n.querySelector('.nav-burger');if(!b)return;
+function set(o){n.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Menu');}
+b.addEventListener('click',function(){set(!n.classList.contains('open'));});
+n.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){set(false);});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+addEventListener('resize',function(){if(innerWidth>920)set(false);});})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.js-mail').forEach(function(a){a.href='mailto:'+a.getAttribute('data-u')+'@'+a.getAttribute('data-d');});
+  try{
+    var framed=false;try{framed=window.self!==window.top;}catch(e){framed=true;}
+    var goTop=function(){try{window.scrollTo({top:0,left:0,behavior:'instant'});}catch(e){try{window.scrollTo(0,0);}catch(_){}}};
+    var nav=(performance.getEntriesByType&&performance.getEntriesByType('navigation')[0])||{};
+    var hash=(location.hash||'').slice(1),target=false;try{target=!!(hash&&document.getElementById(decodeURIComponent(hash)));}catch(e){}
+    var keep=target||/[?&]sector=/.test(location.search);
+    if(!keep&&(framed||!nav.type||nav.type==='navigate')){
+      if(framed){try{history.scrollRestoration='manual';}catch(e){}}
+      var touched=false;['wheel','touchstart','keydown','mousedown'].forEach(function(ev){addEventListener(ev,function(){touched=true;},{passive:true,once:true});});
+      var top=function(){if(!touched)goTop();};
+      top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',top);
+      if(framed){[60,200,500,900].forEach(function(t){setTimeout(top,t);});}
+    }
+    if(framed){
+      /* an embedding frame can carry the old scroll position over to the next page, so reset it on the way out */
+      addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(a.target==='_blank'||/^(https?:|mailto:|tel:|#)/.test(h)||h.indexOf('#')>-1||/[?&]sector=/.test(h))return;goTop();},true);
+      addEventListener('pagehide',goTop);
+    }
+    var here=location.pathname.split('/').pop()||'index.html';
+    try{var c=document.querySelector('link[rel="canonical"]');if(c){here=c.getAttribute('href').split('?')[0].split('/').pop()||'index.html';}}catch(e){}
+    document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(h===here&&!a.closest('main')){a.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});}});
+  }catch(e){}
+})();
+</script>
